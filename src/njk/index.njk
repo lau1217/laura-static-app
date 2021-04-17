@@ -8,6 +8,19 @@
     <div class="col-md-8 offset-md-2 text-center">
       <h1>A pirate's life is for me</h1>
       <p>Hempen halter mizzenmast deadlights gaff pillage starboard jack lee Blimey draught. Man-of-war piracy black jack sutler Yellow Jack keel provost overhaul execution dock rigging. Log quarterdeck dead men tell no tales red ensign gibbet grog blossom bilge Nelsons folly code of conduct gunwalls.</p>
+  <div class="row">
+  {%for blog in blog.blogs%}
+    <div class="col-sm-6 col-lg-4">
+      <div class="card border-primary mb-4" style="max-width: 18rem;">
+      <img src="{{ blog.image }}" class="card-img-top" alt="image">
+      <div class="card-header">{{blog.slug}} </div>
+      <div class="card-body">
+        <h6 class="card-title">{{blog.headline}}</h6>
+        <a href="{{ relative_path }}blog/{{ blog.slug}}.html" target="_blank">Source</a>
+      </div>
+    </div>
+    </div>
+  {%endfor%}
     </div>
   </div>
 </div>
