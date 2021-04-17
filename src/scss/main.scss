@@ -5,7 +5,8 @@
 // $body-color: white;
 // $link-hover-color: grey;
 // $font-family-sans-serif: "Helvetica Neue";
-
+$theme-colors: (
+  "primary": #ff00c3);
 /* bootstrap */
 // Option A: Include all of Bootstrap
 @import "../../node_modules/bootstrap/scss/bootstrap";
@@ -20,6 +21,7 @@
 
 // Import partials
 @import "nav";
+@import "jumbotron";
 
 h3 {
   font-size: 1.5rem;
